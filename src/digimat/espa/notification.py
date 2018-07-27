@@ -25,6 +25,10 @@ class Notification(object):
     def data(self):
         return self._data
 
+    @property
+    def callType(self):
+        return self._callType
+
     def __getitem__(self, key):
         try:
             return self._data[key]
